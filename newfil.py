@@ -1,6 +1,6 @@
 import pygame
 from pygame.draw import *
-from random import randint
+
 
 pygame.init()
 
@@ -26,6 +26,21 @@ for x, y in B:
 
 #sun
 circle(screen, ("yellow"), (500, 40), 30)
+
+#house
+ #build
+rect(screen, ("yellow"), (100, 170, 200, 120))
+rect(screen, ("black"), (100, 170, 200, 120), 2)
+
+ #roof
+polygon(screen, ("green"), ((80, 170), (320, 170), (200, 100)))
+polygon(screen, ("black"), ((80, 170), (320, 170), (200, 100)), 3)
+
+ #windows
+rect(screen, (135, 206, 235), (140, 200, 40, 50))
+rect(screen, ("black"), (140, 200, 40, 50), 2)
+rect(screen, (135, 206, 235), (220, 200, 40, 50))
+rect(screen, ("black"), (220, 200, 40, 50), 2)
 
 
 
